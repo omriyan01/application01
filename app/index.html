@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Buttons</title>
+</head>
+<body>
+    <h1>TikTok Buttons</h1>
+    <button onclick="navigateToTikTokProfile('omri_yan')">Visit omri yankelevits tiktok</button>
+    <button onclick="navigateToTikTokProfile('omertimor1')">visit omer timor tiktok</button>
+    <button onclick="navigateToTikTokExplore()">Explore TikTok</button>
+
+    <script>
+        function navigateToTikTokProfile(username) {
+            const tiktokProfileUrl = `https://www.tiktok.com/@${username}`;
+            window.location.href = tiktokProfileUrl;
+        }
+
+        function navigateToTikTokExplore() {
+            const tiktokExploreUrl = 'https://www.tiktok.com/explore';
+            window.location.href = tiktokExploreUrl;
+        }
+    </script>
+</body>
+</html>
